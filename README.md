@@ -6,7 +6,7 @@ Webpack, React, and Express are included.
 ## Installation
 
 ```bash
-git clone https://github.com/Sonny93/Base-React-Folder-Project.git
+git clone https://github.com/Sonny93/base-react-project.git
 npm install
 npm install -g pm2
 ```

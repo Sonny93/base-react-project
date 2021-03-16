@@ -5,7 +5,7 @@ Template React qui inclut React, Webpack & Express.
 ## Installation
 
 ```bash
-git clone https://github.com/Sonny93/base-react-project.git
+git clone https://github.com/Sonny93/react-template.git
 npm install
 ```
 

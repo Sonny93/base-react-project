@@ -1,32 +1,31 @@
-# Base React Project
+# Template React
 
-Base react project with express server.\
-Webpack, React, and Express are included.
+Template React qui inclut React, Webpack & Express.
 
 ## Installation
 
 ```bash
 git clone https://github.com/Sonny93/base-react-project.git
 npm install
-npm install -g pm2
 ```
 
-## Dev
+## Développement
 
-Watching files with webpack
+Watching React files
 ```bash
 npm run watch
 ```
 
-Start server
+Démarrer le serveur de développement
 ```bash
-pm2 start server.js --watch && clear && pm2 logs
+nodemon server.json
 ```
 
 ## Production
 
 ```bash
 npm run build
+pm2 start server --name="Le nom du projet"
 ```
 
 ## License

@@ -13,7 +13,7 @@ module.exports = {
     },
     plugins: [new CleanWebpackPlugin()],
     module: {
-        rules: [{
+        rules: {
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
             resolve: {
@@ -25,6 +25,16 @@ module.exports = {
         }, {
             test: /\.css$/i,
             use: ['style-loader', 'css-loader'],
+        }, {
+            test: /\.svg$/,
+            use: ['@svgr/webpack'],
+        }, {
+            test: /\.(png|jpe?g|gif)$/i,
+            use: [
+                {
+                    loader: 'file-loader',
+                },
+            ],
         }]
     }
 };

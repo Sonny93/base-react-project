@@ -13,7 +13,7 @@ module.exports = {
     },
     plugins: [new CleanWebpackPlugin()],
     module: {
-        rules: {
+        rules: [{
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
             resolve: {

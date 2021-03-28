@@ -1,6 +1,6 @@
 # Template React
 
-Template React qui inclut React, Webpack & Express.
+Template React qui inclut React, Webpack, Babel & Express.
 
 ## Installation
 

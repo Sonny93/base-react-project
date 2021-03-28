@@ -1,7 +1,17 @@
 {
     "presets": [
-        [ "@babel/preset-env", { "targets": { "node": "10" } }],
+        [ "@babel/preset-env", { "targets": { "node": "10" } } ],
         "@babel/preset-react"
     ],
-    "plugins": ["@babel/plugin-proposal-class-properties"]
+    "plugins": [
+        "@babel/plugin-proposal-class-properties",
+        ["module-resolver", {
+            "root": [ "./client/src" ],
+            "alias": {
+                "@components": "./client/src/components",
+                "@assets": "./client/src/assets",
+                "@": "./client"
+            }
+        }]
+    ]
 }

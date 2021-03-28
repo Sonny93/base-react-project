@@ -9,32 +9,30 @@ module.exports = {
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['.jsx', '.js', '.css']
+        extensions: [ '.jsx', '.js', '.css' ]
     },
-    plugins: [new CleanWebpackPlugin()],
+    plugins: [ new CleanWebpackPlugin() ],
     module: {
         rules: [{
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
             resolve: {
-                extensions: ['.jsx', 'js']
+                extensions: [ '.jsx', 'js' ]
             },
             use: {
-                loader: "babel-loader"
+                loader:'babel-loader'
             }
         }, {
             test: /\.css$/i,
-            use: ['style-loader', 'css-loader'],
+            use: [ 'style-loader', 'css-loader' ],
         }, {
             test: /\.svg$/,
-            use: ['@svgr/webpack'],
+            use: [ '@svgr/webpack' ],
         }, {
             test: /\.(png|jpe?g|gif)$/i,
-            use: [
-                {
-                    loader: 'file-loader',
-                },
-            ],
+            use: [{
+                loader: 'file-loader',
+            }]
         }]
     }
 };
